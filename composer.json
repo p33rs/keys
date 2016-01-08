@@ -1,7 +1,7 @@
 {
-    "name": "laravel/laravel",
-    "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "name": "p33rs/key_manager",
+    "description": "A LAMP public key management server",
+    "keywords": ["php", "mysql", "lamp", "publickey", "openssh"],
     "license": "MIT",
     "type": "project",
     "require": {
@@ -21,7 +21,7 @@
             "database"
         ],
         "psr-4": {
-            "App\\": "app/"
+            "KeyManager\\": "app/"
         }
     },
     "autoload-dev": {
