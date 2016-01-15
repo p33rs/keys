@@ -13,11 +13,11 @@ class CreateMembershipsTable extends Migration
     public function up()
     {
         Schema::create('memberships', function (Blueprint $table) {
+            $table->increments('id');
             $table->integer('userid')->unsigned();
             $table->integer('groupid')->unsigned();
             $table->foreign('userid')->references('id')->on('users');
             $table->foreign('groupid')->references('id')->on('groups');
-            $table->primary(['userid', 'groupid']);
             $table->timestamp('created_at');
         });
     }
