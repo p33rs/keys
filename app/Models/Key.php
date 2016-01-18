@@ -1,6 +1,6 @@
 <?php
 
-namespace KeyManager;
+namespace KeyManager\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
